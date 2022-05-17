@@ -6023,7 +6023,7 @@ class Benchmark {
         }
       }
 
-      GenerateKeyFromInt(thread->rand.Next() % FLAGS_num, FLAGS_num, &key);
+      GenerateKeyFromInt(thread->rand.Next(), FLAGS_num, &key);
       Status s;
 
       Slice val = gen.Generate();
