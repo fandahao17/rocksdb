@@ -1,0 +1,62 @@
+/home/fanjinhao/spdk/build/examples/blobcli: invalid option -- '-'
+/home/fanjinhao/spdk/build/examples/blobcli: invalid option -- 't'
+ERROR: invalid option
+Version SPDK v22.05-pre git sha1 7939938f2
+Usage: blobcli [-j SPDK josn_config_file] Command
+
+blobcli is a command line tool for interacting with blobstore
+on the underlying device specified in the conf file passed
+in as a command line option.
+
+Commands include:
+	-b bdev - name of the block device to use (example: Nvme0n1)
+	-d <blobid> filename - dump contents of a blob to a file
+	-D - dump metadata contents of an existing blobstore
+	-f <blobid> value - fill a blob with a decimal value
+	-h - this help screen
+	-i - initialize a blobstore
+	-l bdevs | blobs - list either available bdevs or existing blobs
+	-m <blobid> filename - import contents of a file to a blob
+	-n <# clusters> - create new blob
+	-p <blobid> - set the superblob to the ID provided
+	-r <blobid> name - remove xattr name/value pair
+	-R - recover the blobstore: like fsck for the blobstore
+	-s <blobid> | bs - show blob info or blobstore info
+	-S - enter interactive shell mode
+	-T <filename> - automated script mode
+	-w <blobid> - delete (whack) a blob
+	-x <blobid> name value - set xattr name/value pair
+	-X - exit when in interactive shell mode
+
+ERROR: invalid option
+Version SPDK v22.05-pre git sha1 7939938f2
+Usage: blobcli [-j SPDK josn_config_file] Command
+
+blobcli is a command line tool for interacting with blobstore
+on the underlying device specified in the conf file passed
+in as a command line option.
+
+Commands include:
+	-b bdev - name of the block device to use (example: Nvme0n1)
+	-d <blobid> filename - dump contents of a blob to a file
+	-D - dump metadata contents of an existing blobstore
+	-f <blobid> value - fill a blob with a decimal value
+	-h - this help screen
+	-i - initialize a blobstore
+	-l bdevs | blobs - list either available bdevs or existing blobs
+	-m <blobid> filename - import contents of a file to a blob
+	-n <# clusters> - create new blob
+	-p <blobid> - set the superblob to the ID provided
+	-r <blobid> name - remove xattr name/value pair
+	-R - recover the blobstore: like fsck for the blobstore
+	-s <blobid> | bs - show blob info or blobstore info
+	-S - enter interactive shell mode
+	-T <filename> - automated script mode
+	-w <blobid> - delete (whack) a blob
+	-x <blobid> name value - set xattr name/value pair
+	-X - exit when in interactive shell mode
+
+Error: No config file found.
+To create a config file named 'blobcli.json' for your NVMe device:
+   <path to spdk>/scripts/gen_nvme.sh --json-with-subsystems > blobcli.json
+and then re-run the cli tool.
